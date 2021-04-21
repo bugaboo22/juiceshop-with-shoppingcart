@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import com.example.WebStore.web.WebStoreController;
+import com.example.WebStore.web.JuiceStoreController;
 
 
 @ExtendWith(SpringExtension.class)
@@ -16,7 +16,7 @@ import com.example.WebStore.web.WebStoreController;
 public class WebStoreApplicationTests {
 
 	@Autowired
-	private WebStoreController controller;
+	private JuiceStoreController controller;
 		
 	@Test
 	 public void contextLoads() throws Exception {

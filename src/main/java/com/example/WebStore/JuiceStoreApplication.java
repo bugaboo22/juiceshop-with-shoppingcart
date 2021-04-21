@@ -13,11 +13,14 @@ import com.example.WebStore.domain.Customer;
 import com.example.WebStore.domain.Items;
 import com.example.WebStore.domain.ShoppingCart;
 
+//LOCAL HOST ADDRESS: http://localhost:8080/shop/home
+//ON A SERVER: https://freshjuices.herokuapp.com/shop/home
+
 @SpringBootApplication
-public class WebStoreApplication {
+public class JuiceStoreApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(WebStoreApplication.class, args);
+		SpringApplication.run(JuiceStoreApplication.class, args);
 	}
 
 

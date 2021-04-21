@@ -19,13 +19,12 @@ import com.example.WebStore.domain.Customer;
 import com.example.WebStore.domain.ShoppingCart;
 import com.example.WebStore.domain.Items;
 
-// LOCAL HOST ADDRESS: http://localhost:8080/shop/home
 @Controller
 @RequestMapping("/shop")
-public class WebStoreController {
+public class JuiceStoreController {
 
 	ShoppingCart shoppingCart = new ShoppingCart("Juice shop");
-
+/*
 	@PostConstruct
 	public void addcustomers() {
 
@@ -35,7 +34,7 @@ public class WebStoreController {
 		shoppingCart.add_customer(new Customer("Pekka Hämäläinen", "pekka1234@gmail.com", new Basket()));
 		shoppingCart.add_customer(new Customer("Jussi Väänänen", "jussivaananen@hotmail.com", new Basket()));
 		shoppingCart.add_customer(new Customer("Matti Vanhanen", "mattimies@gmail.com", new Basket())); 
-	} 
+	} */
 
 	@GetMapping("/home")
 	public String homepage(Model model) {
