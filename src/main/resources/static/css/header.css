@@ -1,0 +1,15 @@
+nav{
+    background-color:#222831;
+    padding:4px;
+    margin-top:-7px;
+    margin-left:-5px;
+    width:100%;
+	
+}
+
+nav h1{
+    font-size:35px;
+    color:white;
+    padding:10px;
+	text-align: center;
+}
