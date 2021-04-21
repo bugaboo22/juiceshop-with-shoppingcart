@@ -11,16 +11,15 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import com.example.WebStore.web.JuiceStoreController;
 
 
-@ExtendWith(SpringExtension.class)
+
 @SpringBootTest
-public class WebStoreApplicationTests {
+public class JuiceStoreApplicationTests {
 
 	@Autowired
 	private JuiceStoreController controller;
 		
 	@Test
-	 public void contextLoads() throws Exception {
-	 assertThat(controller).isNotNull();
-	 }
+	void contextLoads() {
+	}
 
 }

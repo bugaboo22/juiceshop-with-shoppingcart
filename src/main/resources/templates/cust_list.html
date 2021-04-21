@@ -12,7 +12,7 @@
 </head>
 <body>
     <div th:insert="~{header::header}"></div>
-    <h2 th:inline="text" class="title">Customer Name : [[${customer}]]</h2>
+    <h2 th:inline="text" class="title">Shopping cart : [[${customer}]]</h2>
     <hr class="rule">
     <a th:href="@{additemcust(customer=${customer})}" class="btn btn-danger add_item">
         Add Items

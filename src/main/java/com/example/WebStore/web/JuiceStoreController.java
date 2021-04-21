@@ -24,7 +24,9 @@ import com.example.WebStore.domain.Items;
 public class JuiceStoreController {
 
 	ShoppingCart shoppingCart = new ShoppingCart("Juice shop");
-/*
+
+	// ADD ITEMS AND CUSTOMERS LOCALLY
+	
 	@PostConstruct
 	public void addcustomers() {
 
@@ -34,7 +36,7 @@ public class JuiceStoreController {
 		shoppingCart.add_customer(new Customer("Pekka Hämäläinen", "pekka1234@gmail.com", new Basket()));
 		shoppingCart.add_customer(new Customer("Jussi Väänänen", "jussivaananen@hotmail.com", new Basket()));
 		shoppingCart.add_customer(new Customer("Matti Vanhanen", "mattimies@gmail.com", new Basket())); 
-	} */
+	} 
 
 	@GetMapping("/home")
 	public String homepage(Model model) {
@@ -73,7 +75,7 @@ public class JuiceStoreController {
 				saveCustomer = shoppingCart.getCustomers().get(pos);
 				saveCustomer.setName(customer.getName());
 				saveCustomer.setContact(customer.getContact());
-				return "redirect:init";
+				return "redirect:home";
 
 			} else {
 				saveCustomer = customer;
